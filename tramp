@@ -1,0 +1,51 @@
+;; -*- emacs-lisp -*- <14/04/01 00:11:47 /Users/kumagaikeisuke/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+((["sudo" "root" "localhost" nil nil]
+  ("uname" "Darwin 13.0.0")
+  ("test" "test")
+  ("remote-path"
+   ("/usr/bin" "/bin" "/usr/sbin" "/sbin" "/usr/local/bin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("file-exists" "test -e")
+  ("readlink" nil)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("stat" nil)
+  ("id" "/usr/bin/id")
+  ("gid-integer" 0)
+  ("~root" "/var/root"))
+ (["ssh" "senshin" "senshin" nil nil]
+  ("uname" "Linux 2.6.32-358.el6.x86_64")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("id" "/usr/bin/id")
+  ("gid-integer" 501)
+  ("stat" "\\stat")
+  ("file-exists" "test -e")
+  ("readlink" "\\readlink"))
+ (["ssh" nil "senshin" nil nil]
+  ("uname" "Linux 2.6.32-431.3.1.el6.x86_64")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("file-exists" "test -e")
+  ("~" "/home/senshin")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("readlink" "\\readlink")
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 501)
+  ("uid-integer" 501)
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t)))
