@@ -1,6 +1,6 @@
 (setq-default tab-width 4 indent-tabs-mode nil)
 (add-to-list 'load-path "~/.emacs.d/lisp")    ; load-pathにすでに設定されている場合は表れません
-
+;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (require 'auto-complete-config)
 (ac-config-default)
 (global-auto-complete-mode 1)
