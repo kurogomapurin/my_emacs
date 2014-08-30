@@ -2,3 +2,7 @@ eshell/*
 *~
 #*#
 ac-comphist.dat
+!.status.el
+*.elc
+.loaddefs.el
+el-get-packages/
