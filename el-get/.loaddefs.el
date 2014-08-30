@@ -108,6 +108,69 @@ Display a list of packages.
 
 ;;;***
 
+;;;### (autoloads (gist-fetch gist-list gist-region-or-buffer-private
+;;;;;;  gist-region-or-buffer gist-buffer-private gist-buffer gist-region-private
+;;;;;;  gist-region) "gist/gist" "gist/gist.el" (21496 60613 0 0))
+;;; Generated autoloads from gist/gist.el
+
+(autoload 'gist-region "gist/gist" "\
+Post the current region as a new paste at gist.github.com
+Copies the URL into the kill ring.
+
+With a prefix argument, makes a private paste.
+
+\(fn BEGIN END &optional PRIVATE CALLBACK)" t nil)
+
+(autoload 'gist-region-private "gist/gist" "\
+Post the current region as a new private paste at gist.github.com
+Copies the URL into the kill ring.
+
+\(fn BEGIN END)" t nil)
+
+(autoload 'gist-buffer "gist/gist" "\
+Post the current buffer as a new paste at gist.github.com.
+Copies the URL into the kill ring.
+
+With a prefix argument, makes a private paste.
+
+\(fn &optional PRIVATE)" t nil)
+
+(autoload 'gist-buffer-private "gist/gist" "\
+Post the current buffer as a new private paste at gist.github.com.
+Copies the URL into the kill ring.
+
+\(fn)" t nil)
+
+(autoload 'gist-region-or-buffer "gist/gist" "\
+Post either the current region, or if mark is not set, the
+  current buffer as a new paste at gist.github.com
+
+Copies the URL into the kill ring.
+
+With a prefix argument, makes a private paste.
+
+\(fn &optional PRIVATE)" t nil)
+
+(autoload 'gist-region-or-buffer-private "gist/gist" "\
+Post either the current region, or if mark is not set, the
+  current buffer as a new private paste at gist.github.com
+
+Copies the URL into the kill ring.
+
+\(fn)" t nil)
+
+(autoload 'gist-list "gist/gist" "\
+Displays a list of all of the current user's gists in a new buffer.
+
+\(fn &optional FORCE-RELOAD BACKGROUND)" t nil)
+
+(autoload 'gist-fetch "gist/gist" "\
+
+
+\(fn ID)" t nil)
+
+;;;***
+
 ;;;### (autoloads (lua-mode) "lua-mode/lua-mode" "lua-mode/lua-mode.el"
 ;;;;;;  (21484 33161 0 0))
 ;;; Generated autoloads from lua-mode/lua-mode.el
@@ -123,11 +186,56 @@ Major mode for editing Lua code.
 
 ;;;***
 
+;;;### (autoloads (tabulated-list-mode) "tabulated-list/tabulated-list"
+;;;;;;  "tabulated-list/tabulated-list.el" (21496 60582 0 0))
+;;; Generated autoloads from tabulated-list/tabulated-list.el
+
+(autoload 'tabulated-list-mode "tabulated-list/tabulated-list" "\
+Generic major mode for browsing a list of items.
+This mode is usually not used directly; instead, other major
+modes are derived from it, using `define-derived-mode'.
+
+In this major mode, the buffer is divided into multiple columns,
+which are labelled using the header line.  Each non-empty line
+belongs to one \"entry\", and the entries can be sorted according
+to their column values.
+
+An inheriting mode should usually do the following in their body:
+
+ - Set `tabulated-list-format', specifying the column format.
+ - Set `tabulated-list-revert-hook', if the buffer contents need
+   to be specially recomputed prior to `revert-buffer'.
+ - Maybe set a `tabulated-list-entries' function (see below).
+ - Maybe set `tabulated-list-printer' (see below).
+ - Maybe set `tabulated-list-padding'.
+ - Call `tabulated-list-init-header' to initialize `header-line-format'
+   according to `tabulated-list-format'.
+
+An inheriting mode is usually accompanied by a \"list-FOO\"
+command (e.g. `list-packages', `list-processes').  This command
+creates or switches to a buffer and enables the major mode in
+that buffer.  If `tabulated-list-entries' is not a function, the
+command should initialize it to a list of entries for displaying.
+Finally, it should call `tabulated-list-print'.
+
+`tabulated-list-print' calls the printer function specified by
+`tabulated-list-printer', once for each entry.  The default
+printer is `tabulated-list-print-entry', but a mode that keeps
+data in an ewoc may instead specify a printer function (e.g., one
+that calls `ewoc-enter-last'), with `tabulated-list-print-entry'
+as the ewoc pretty-printer.
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads nil nil ("el-get/el-get-autoloads.el" "el-get/el-get-build.el"
 ;;;;;;  "el-get/el-get-byte-compile.el" "el-get/el-get-core.el" "el-get/el-get-custom.el"
 ;;;;;;  "el-get/el-get-dependencies.el" "el-get/el-get-install.el"
 ;;;;;;  "el-get/el-get-methods.el" "el-get/el-get-notify.el" "el-get/el-get-recipes.el"
-;;;;;;  "el-get/el-get-status.el") (21484 33208 467626 0))
+;;;;;;  "el-get/el-get-status.el" "logito/logito.el" "pcache/pcache-tests.el"
+;;;;;;  "pcache/pcache.el" "request/request-deferred.el" "request/request.el")
+;;;;;;  (21496 60614 569067 0))
 
 ;;;***
 
