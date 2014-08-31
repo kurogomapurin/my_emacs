@@ -129,3 +129,11 @@
 (global-auto-complete-mode t)
 (add-to-list 'ac-modes 'lua-mode)
 ;;(setq ns-use-native-fullscreen nil)
+;; 日付挿入
+(defun insert-current-time()
+  (interactive)
+  (insert (format-time-string "%Y-%m-%d(%a)_%H:%M:%S" (current-time))))
+
+(define-key global-map "\C-cd" `insert-current-time)
+
+
