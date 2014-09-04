@@ -6,9 +6,8 @@
 (global-auto-complete-mode 1)
 (setq ring-bell-function 'ignore)
 
-
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-
+(add-to-list 'load-path "~/.emacs.d/el-get/flim")
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
       (url-retrieve-synchronously
@@ -135,5 +134,4 @@
   (insert (format-time-string "%Y-%m-%d(%a)_%H:%M:%S" (current-time))))
 
 (define-key global-map "\C-cd" `insert-current-time)
-
 
