@@ -134,4 +134,6 @@
   (insert (format-time-string "%Y-%m-%d(%a)_%H:%M:%S" (current-time))))
 
 (define-key global-map "\C-cd" `insert-current-time)
-
+(define-key global-map "\C-z" nil)
+(require 'elscreen)
+(elscreen-start)

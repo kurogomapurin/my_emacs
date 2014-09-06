@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <14/04/01 00:11:47 /Users/kumagaikeisuke/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <14/09/06 18:35:56 /Users/kumagaikeisuke/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -48,4 +48,6 @@
   ("gid-integer" 501)
   ("uid-integer" 501)
   ("ls" "/bin/ls --color=never")
-  ("ls-dired" t)))
+  ("ls-dired" t))
+ (["ftp" "anonymous" "210.155.141.202" nil nil]
+  ("started" t)))
