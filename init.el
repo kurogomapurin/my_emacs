@@ -1,3 +1,4 @@
+
 (setq-default tab-width 4 indent-tabs-mode nil)
 (add-to-list 'load-path "~/.emacs.d/elisp")    ; load-pathにすでに設定されている場合は表れません
 ;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
@@ -135,5 +136,5 @@
 
 (define-key global-map "\C-cd" `insert-current-time)
 (define-key global-map "\C-z" nil)
-(require 'elscreen)
+;;(require 'elscreen)
 (elscreen-start)
